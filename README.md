@@ -1,4 +1,3 @@
-# 2024-p2b-web-flex-design-block-TomasKazda
+# Web: vertically aligned block
 
-
-[Odkaz na liveweb...](https://pslib-cz.github.io/2024-p2b-web-flex-design-block-TomasKazda/)
+[Odkaz na liveweb...](https://tomaskazda.github.io/web-vertical-align-block/)
