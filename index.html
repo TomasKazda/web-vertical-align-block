@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="xyz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    
+    <title>Flex block</title>
+    <style>
+        .article {
+            width: 260px;
+            height: 260px;
+            border: 1px solid gray;
+            text-align: center;
+        }
+
+        .article--center {
+            align-content: center;
+        }
+
+        .article--hack {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <article class="article article--center">
+        <p>Lorem pixel ipsum</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quas sequi suscipit deserunt amet.</p>
+    </article>
+    <article class="article article--hack">
+        <p>Lorem pixel ipsum</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quas sequi suscipit deserunt amet.</p>
+    </article>
+</body>
+</html>
