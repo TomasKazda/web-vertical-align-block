@@ -7,14 +7,30 @@
     
     <title>Flex block</title>
     <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
         .article {
-            width: 260px;
-            height: 260px;
+            width: 280px;
+            min-height: 280px;
             border: 1px solid gray;
-            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        .article p {
+            background-color: lightgray;
         }
 
         .article--center {
+            align-content: center;
+            text-align: center;
+        }
+
+        .article--boxcenter {
+            justify-items: center;
             align-content: center;
         }
 
@@ -22,17 +38,30 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 <body>
-    <article class="article article--center">
-        <p>Lorem pixel ipsum</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quas sequi suscipit deserunt amet.</p>
-    </article>
-    <article class="article article--hack">
-        <p>Lorem pixel ipsum</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quas sequi suscipit deserunt amet.</p>
-    </article>
+    <div class="container">
+        <article class="article article--center">
+            <p>Content center</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quas sequi suscipit deserunt amet.</p>
+            <p>align-content: center;<br>text-align: center;</p>
+        </article>
+        <article class="article article--boxcenter">
+            <p>Boxcenter block</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quas sequi suscipit deserunt amet.</p>
+            <p>justify-items: center;<br>align-content: center;</p>
+        </article>
+        <article class="article article--hack">
+            <p>Flex hack</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quas sequi suscipit deserunt amet.</p>
+            <p>display: flex;<br>flex-direction: column;<br>justify-content: center;<br>align-items: center;</p>
+        </article>
+    </div>
+    <p>
+        <a href="https://web.dev/blog/align-content-block">Reference</a>
+    </p>
 </body>
 </html>
